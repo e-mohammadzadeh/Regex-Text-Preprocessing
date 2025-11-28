@@ -35,6 +35,32 @@ This repository provides a robust, configurable, and extensible text preprocessi
 
 <br/>
 
+## 🔄 Preprocessing Pipeline
+The preprocessing follows this carefully ordered sequence:
+
+| Step | Operation               | Description                                           |
+|------|--------------------------|-------------------------------------------------------|
+| 1    | Remove NULL values       | Drops rows with missing data                          |
+| 2    | Replace URLs             | Protects and maps web addresses                       |
+| 3    | Replace Emails           | Protects and maps email addresses                     |
+| 4    | Replace Time             | Normalizes time formats                               |
+| 5    | Replace Money            | Handles currency symbols and amounts                  |
+| 6    | Expand Mentions          | Converts `@user_name` → `user name`                   |
+| 7    | Expand Hashtags          | Converts `#hash_tag` → `hash tag`                     |
+| 8    | Remove HTML Tags         | Strips `<div>`, `<p>`, etc.                           |
+| 9    | Remove Cashtags          | Removes stock symbols like `$AAPL`                    |
+| 10   | Expand Contractions      | `don't` → `do not`                                    |
+| 11   | Replace Slang Words      | `ur` → `your`, `brb` → `be right back`                |
+| 12   | Convert to Lowercase     | Normalizes case                                       |
+| 13   | Remove Dates             | Strips date patterns                                  |
+| 14   | Remove Stopwords         | Removes common words (preserves negations)            |
+| 15   | Remove Titles            | Removes `Mr.`, `Dr.`, `Prof.`, etc.                   |
+| 16   | Remove Numbers           | Deletes numeric values (protects markers)             |
+| 17   | Remove Punctuation       | Strips special characters (protects markers)          |
+| 18   | Replace Repeated Letters | `Gooooood` → `Good`                                   |
+
+<br/>
+
 ## 📁 Project Structure
 ```
 📦 Project Root
