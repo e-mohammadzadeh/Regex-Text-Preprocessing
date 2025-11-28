@@ -68,7 +68,7 @@ This repository provides a robust, configurable, and extensible text preprocessi
 │    └── 📓 preprocessor.py                  # Main preprocessing logic
 │
 ├── 📓 main.py                               # Entry point script
-├── 📄 requirements.txt                   # Python dependencies
+├── 📄 requirements.txt                      # Python dependencies
 └── 📄 README.md
 ```
 
