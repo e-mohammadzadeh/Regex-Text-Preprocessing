@@ -27,29 +27,3 @@ Run the Program:
 
 ## Project Structure
 
-Regex-Text-Preprocessing/
-├── data/
-│   ├── processed/
-│   │   ├── maps/
-│   │   │   ├── money_dictionary.pkl
-│   │   │   ├── time_dictionary.pkl
-│   │   │   └── urls_dictionary.pkl
-│   │   ├── test_clean.csv
-│   │   └── train_clean.csv
-│   └── raw/
-│       ├── test.csv
-│       └── train.csv
-├── documents/
-│   ├── Preprocessing_Document - English.pdf
-│   └── Preprocessing_Document - Persian.pdf
-├── main.py
-├── README.md
-├── requirements.txt
-├── resources/
-│   ├── English_Contractions.json
-│   ├── English_Slang_Dict.json
-│   └── English_Stopwords_without_negatives.txt
-└── src/
-    ├── __init__.py
-    ├── config.py
-    └── preprocessor.py
